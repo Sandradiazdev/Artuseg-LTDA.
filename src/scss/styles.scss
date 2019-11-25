@@ -1,6 +1,10 @@
 // TODO: Crear los estilos necesarios para decorar tu sitio web;
-
-.header {
-    background-color: black;
-}
+@import './components/header';
+@import './components/seccion-primaria';
+@import './components/beneficios';
+@import './components/aliados';
+@import './components/footer';
+@import './components/variables';
+@import './components/banner';
+@import './components/mision';
 

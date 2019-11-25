@@ -1,0 +1,11 @@
+.banner {
+    &__contenedor{
+        text-align: center;
+       
+        & img {    
+            margin: 0;
+            box-shadow: 3px 3px 10px grey;
+            width: 100%;
+        }
+    }
+}

@@ -1,112 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack App</title>
-<link href="css/bundle.css" rel="stylesheet"><link href="css/bundle.css" rel="stylesheet"></head>
+    <meta name="description" content="Artuseg LTDA. Más que una compañia de seguros.">
+    <!-- Añadir Favicon -->
+    <title>Artuseg LTDA.</title>
+    <link rel="stylesheet" href="/dist/css/bundle.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+<link href="css/bundle.css" rel="stylesheet"></head>
+
 <body>
     <!-- Menú de navegación -->
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header__contenedor">
             <div class="header__logo">
-                <img src="#" alt="Logo" class="header__logo__principal">
+                <img src="/dist/img/logo.png" alt="Logo" class="header__logo__principal">
             </div>
-            <div class="header__navegacion">
-                <nav class="navegacion__principal">
-                    <a href="#" class="navegacion__principal__items">Quiénes somos</a>
-                    <a href="#" class="navegacion__principal__items">Nuestros seguros</a>
-                    <a href="#" class="navegacion__principal__items">Políticas de seguros</a>
-                    <a href="#" class="navegacion__principal__items">Contacto</a>
-                </nav>
-            </div>
+            <a href="#" class="header__btn-mobile">
+                <img src="/src/img/call.png" alt="">
+            </a>
+            </nav>
+            <nav class="header__navegacion">
+                <a href="#inicio" class="header__navegacion__item">Inicio</a>
+                <a href="#principal" class="header__navegacion__item">Servicios</a>
+                <a href="#beneficios" class="header__navegacion__item">Beneficios</a>
+                <a href="#aliados" class="header__navegacion__item">Nuestros aliados</a> 
+                <a href="#mision" class="header__navegacion__item">Misión y Visión</a>
+                <a href="#footer" class="header__navegacion__item">Contacto</a>
+            </nav> 
         </div>
     </header>
     <!-- Sección Carrusel -->
-    <section class="Carrusel">
-        <div class="Carrusel__contenedor">
-            <div class="imagen__carrusel">
-                <img src="#" alt="#" class="imagenes__carrusel">
-                <img src="#" alt="#" class="imagenes__carrusel">
-                <img src="#" alt="#" class="imagenes__carrusel">
-            </div>
+    <section class="banner">
+        <div class="banner__contenedor">
+            <picture class="banner__contenedor__picture">
+                <source media="(max-width: 1024px)" srcset="/dist/img/banner-principal-mobile.jpg" class="picture__imagen">
+                <img src="/dist/img/banner-principal-desktop.jpg" alt="Space Needle"  class="picture__imagen">
+            </picture>
         </div>
     </section>
     <!-- Seccion Principal -->
-    <section class="principal">
+    <section class="principal" id="principal">
         <div class="principal__contenedor">
             <div class="principal__imagen">
-                <img src="#" alt="" class="imagen__principal">
-            </div> 
+                    <picture>
+                            <source media="(max-width: 1024px)" srcset="/dist/img/familia-mobile.png" >
+                            <img src="/dist/img/familia-desktop.png" alt="Space Needle"  >
+                        </picture>
+            </div>
             <div class="principal__informacion">
-                <h1 class="principal__titulo">Más que una compañia de seguros</h1>
-                <p class="principal__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est delectus placeat, porro odio ipsum distinctio consequuntur eius sequi et tempore error perferendis nemo quibusdam architecto libero atque exercitationem vel eveniet.</p>
-                <p class="principal__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est delectus placeat, porro odio ipsum distinctio consequuntur eius sequi et tempore error perferendis nemo quibusdam architecto libero atque exercitationem vel eveniet.</p>
-            </div> 
+                <h1 class="principal__informacion__titulo">Más que una compañia de seguros</h1>
+                <p class="principal__informacion__parrafo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est delectus
+                    placeat, porro odio ipsum distinctio consequuntur eius sequi et tempore error perferendis nemo
+                    quibusdam architecto libero atque exercitationem vel evenietporro odio ipsum distinctio consequuntur eius sequi et tempore error perferendis nemo
+                    quibusdam architecto libero atque exercitationem vel eveniet..</p>
+                <p class="principal__informacion__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est delectus
+                    placeat, porro odio ipsum distinctio consequuntur eius sequi et tempore error perferendis nemo
+                    quibusdam architecto libero atque exercitationem vel evenietquibusdam architecto libero atque exercitationem vel evenietporro odio ipsum distinctio consequuntur eius sequi et tempore error perferendis nemo
+                    quibusdam architecto libero atque exercitationem vel eveniet..</p>
+            </div>
         </div>
     </section>
-    <!-- Seccion nuestro benecifios -->
-    <section class="secundaria">
-        <div class="secundaria__contenedor">
-            <h1 class="secundaria__titulo">Nuestros benecifios</h1> 
-            <div class="secundaria__articulos">
-                <article class="secundaria__articulo">
-                    <img src="" alt="" class="secundaria__articulo__imagen">
-                    <h1 class="secundaria__articulo__titulo">#</h1> 
-                    <p class="secundaria__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi inventore eligendi.</p> 
+    <!-- Seccion nuestros benecifios -->
+    <section class="beneficios" id="beneficios">
+        <div class="beneficios__contenedor">
+            <h1 class="beneficios__titulo">Nuestros beneficios</h1>
+            <div class="beneficios__articulos">
+                <article class="beneficios__articulo">
+                    <img src="/dist/img/vocacion.jpg" alt="" class="beneficios__articulo__imagen">
+                    <div class="beneficios__articulo__textos">
+                    <h1 class="beneficios__articulo__titulo">Vocación</h1>
+                    <p class="beneficios__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim
+                        doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi
+                        inventore eligendi.</p>
+                    </div>
                 </article>
-                <article class="secundaria__articulo">
-                    <img src="" alt="" class="secundaria__articulo__imagen">
-                    <h1 class="secundaria__articulo__titulo">#</h1>
-                    <p class="secundaria__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi inventore eligendi.</p>  
+                <article class="beneficios__articulo">
+                    <img src="/dist/img/responsabilidad.jpg" alt="" class="beneficios__articulo__imagen">
+                    <div class="beneficios__articulo__textos">
+                    <h1 class="beneficios__articulo__titulo">Responsabilidad</h1>
+                    <p class="beneficios__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim
+                        doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi
+                        inventore eligendi.</p>
+                    </div>
                 </article>
-                <article class="secundaria__articulo">
-                    <img src="" alt="" class="secundaria__articulo__imagen">
-                    <h1 class="secundaria__articulo__titulo">#</h1>
-                    <p class="secundaria__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi inventore eligendi.</p>  
+                <article class="beneficios__articulo">
+                    <img src="/dist/img/servicio-al-cliente.jpg" alt="" class="beneficios__articulo__imagen">
+                    <div class="beneficios__articulo__textos">
+                    <h1 class="beneficios__articulo__titulo">Servicio al cliente</h1>
+                    <p class="beneficios__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim
+                        doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi
+                        inventore eligendi.</p>
+                    </div>
                 </article>
             </div>
         </div>
     </section>
-    <!-- Seccion testimonios -->
-    <section class="terciaria">
-        <div class="contenedor__terciaria">
-                <h1 class="titulo__terciaria">Testimonios</h1>
-            <div class="terciaria__articulos">
-                <article class="terciaria__articulo">
-                    <img src="" alt="#" class="terciaria__articulo__imagen">
-                    <p class="terciaria__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi inventore eligendi.</p> 
-                </article>
-                 <article class="terciaria__articulo">
-                    <img src="" alt="#" class="terciaria__articulo__imagen">
-                    <p class="terciaria__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi inventore eligendi.</p>  
-                </article>
-                <article class="terciaria__articulo">
-                    <img src="" alt="#" class="terciaria__articulo__imagen">
-                    <p class="terciaria__articulo__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eligendi harum sapiente? Officia libero excepturi tempora magnam nisi maxime! Quod, enim doloremque. Quae velit fugit, labore dolor, animi commodi optio aspernatur distinctio nisi inventore eligendi.</p>  
-                </article>
+    <!-- Seccion aliados -->
+    <section class="aliados" id="aliados">
+        <div class="aliados__contenedor">
+            <h1 class="aliados__titulo">Nuestros aliados</h1>
+            <div class="aliados__empresas">
+                <img src="/dist/img/aliado-aseguradora-colombiana.jpg" alt="" class="aliados__empresas__imagenes">
+                <img src="/dist/img/aliado-liberty-seguros.jpg" alt="" class="aliados__empresas__imagenes">               
+                <img src="/dist/img/aliado-sbs.jpg" alt="" class="aliados__empresas__imagenes">
+                <img src="/dist/img/aliado-seguros-bolivar.jpg" alt="" class="aliados__empresas__imagenes">
             </div>
         </div>
     </section>
-    <!-- Mapa principal -->
-    <section class="mapa__principal">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.43493835043!2d-74.18271155000001!3d4.61927965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1573319267748!5m2!1ses-419!2sco" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </section>
-    <footer class="footer__principal">
-        <div class="footer__principal__articulos">
-            <div class="footer__texto__siguenos">
-                <span>Siguenos</span>
-            </div>
-            <div class="footer__principal__social">
-                <img src="#" alt="#" class="footer__principal__imagenes">
-                <img src="#" alt="#" class="footer__principal__imagenes">
-                <img src="#" alt="#" class="footer__principal__imagenes">
-            </div>
+    <!-- Seccion Misión Visión -->
+    <section class="mision" id="mision">
+        <div class="mision__contenedor">
+            <article class="mision__articulos">
+                
+                <h1 class="mision__articulos__titulo">Misión</h1>
+                <img src="/dist/img/mision-desktop.jpg" alt="" class="mision__articulos__imagen">
+                <p class="mision__articulos__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos suscipit vero et illo aspernatur! Eligendi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, asperiores?</p>
+                
+            </article>
+            <article class="mision__articulos">
+                    
+                <h1 class="mision__articulos__titulo">Visión</h1>
+                <img src="/dist/img/vision-desktop.jpg" alt="" class="mision__articulos__imagen">
+                <p class="mision__articulos__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos suscipit vero et illo aspernatur! Eligendi! Lorem, ipsum dolor sit amet consectetur adipisicing elit.Perspiciatis, asperiores?</p>
+                    
+            </article>
         </div>
-        <div class="footer__principal__creditos">
-            <span>Elaborado por Sandra Díaz <br> Artuseg LTDA. 2019 - Derechos reservados</span>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__creditos">
+                <p>Elaborado por Sandra Díaz</p> 
+                <p>Artuseg LTDA. 2019 - Derechos reservados</p>
+            </div>
         </div>
     </footer>
-<script type="text/javascript" src="js/bundle.js"></script><script type="text/javascript" src="js/bundle.js"></script></body>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
 </html>
